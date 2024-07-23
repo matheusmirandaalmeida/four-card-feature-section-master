@@ -45,7 +45,7 @@ body {
     justify-content: space-around;
     justify-items: center;
     align-content: space-evenly;
-    gap: 30px;
+    gap: 10px;
 }
 
 header {
@@ -142,11 +142,42 @@ section img {
     border-top: 4px solid var(--Blue);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
+
+    body {
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--VeryLightGray);
+        gap: 40px;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
     header {
         width: 540px;
         height: 168px;
+        margin-bottom: 10px;
+        /* gap: 40px; */
     }
+
+    header h1 {
+        width: 444px;
+        height: 102px;
+        font-size: 36px;
+    }
+
+    header p {
+        width: 520px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    header h1.destaque {
+        width: 444px;
+    }
+
     .container-section {
         display: grid;
         width: 1110px;
@@ -159,15 +190,20 @@ section img {
     .card {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         border-radius: 10px;
         width: 350px;
         height: 250px;
         background-color: white;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
+        padding: 30px;
         text-align: center;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    section img {
+        margin-top: 30px;
     }
 
     .left {
